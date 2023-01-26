@@ -1,8 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./LocationBox.module.css";
 
 const LocationBox = () => (
-  <div data-testid="LocationBox">LocationBox Component</div>
+  <div className={styles.LocationBox} data-testid="LocationBox">
+    <div className={styles.Location}>Taiwan</div>
+    <div className={styles.Date}>date</div>
+  </div>
 );
 
 LocationBox.propTypes = {};

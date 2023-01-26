@@ -4,7 +4,8 @@ import styles from "./WeatherBox.module.css";
 
 const WeatherBox = () => (
   <div className={styles.WeatherBox} data-testid="WeatherBox">
-    WeatherBox Component
+    <div className={styles.Temperature}>15C</div>
+    <div className={styles.Weather}>Sunny</div>
   </div>
 );
 
