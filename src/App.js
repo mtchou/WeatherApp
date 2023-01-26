@@ -8,7 +8,7 @@ const api = {
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <main>
         <div className="search-box">
           <input type="text" className="search-bar" placeholder="Search..." />
