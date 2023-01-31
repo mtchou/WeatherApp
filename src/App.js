@@ -1,22 +1,32 @@
-import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.css";
 import SearchBox from "./components/SearchBox/SearchBox";
 import LocationBox from "./components/LocationBox/LocationBox";
 import WeatherBox from "./components/WeatherBox/WeatherBox";
 
-const api = {
-  key: "72cc48d6e206d009934112e42d0e6d53",
-  base: "https://api.openweathermap.org/data/3.0/",
-};
-
 function App() {
+  const [queryCity, setQueryCity] = useState("");
+  const [weather, setWeather] = useState({});
 
   return (
     <div className="app">
       <main>
-        <SearchBox />
-        <LocationBox />
-        <WeatherBox />
+        <SearchBox
+          queryCity={queryCity}
+          setQueryCity={setQueryCity}
+          setWeather={setWeather}
+        />
+        {typeof weather.main != "undefined" ? (
+          <>
+            <LocationBox
+              cityName={weather?.name}
+              country={weather?.sys?.country}
+            />
+            <WeatherBox weather={weather} />
+          </>
+        ) : (
+          ""
+        )}
       </main>
     </div>
   );
