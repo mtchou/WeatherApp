@@ -1,13 +1,33 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app.warm {
+  background-image: url("./Assets/HotWeather.jpg");
+  background-position: bottom;
+  background-size: cover;
+  transition: 0.4 case-out;
+}
+
+.app.cold {
+  background-image: url("./Assets/ColdWeather.jpg");
+  background-position: bottom;
+  background-size: cover;
+  transition: 0.4 case-out;
+}
+
+main {
+  min-height: 120vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
+  padding: 25px;
 }
