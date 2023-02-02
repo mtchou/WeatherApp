@@ -1,6 +1,8 @@
-# A Weather React App (Based on a tutorial: https://www.youtube.com/watch?v=GuA0_Z1llYU&ab_channel=TylerPotts) 
+# A Weather React App  
 
-This is a web app to display weather based on the city you typed in. The main goal is to practice:
+This is a web app to display weather based on the city you typed in. I mainly follow a tutorial, but made some changes (tutorial: https://www.youtube.com/watch?v=GuA0_Z1llYU&ab_channel=TylerPotts).
+
+The main goal is to practice:
 1. use React hook (useState) 
 2. retrieve data from an external API (OpenWeatherAPI).
 
