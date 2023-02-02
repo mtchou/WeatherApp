@@ -9,7 +9,13 @@ function App() {
   const [weather, setWeather] = useState({});
 
   return (
-    <div className="app">
+    <div
+      className={
+        typeof weather.main != "undefined" && weather.main.temp > 16
+          ? "app warm"
+          : "app cold"
+      }
+    >
       <main>
         <SearchBox
           queryCity={queryCity}

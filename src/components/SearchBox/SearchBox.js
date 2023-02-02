@@ -1,11 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./SearchBox.module.css";
-
-const openWeatherAPI = {
-  key: "72cc48d6e206d009934112e42d0e6d53",
-  base: "https://api.openweathermap.org/data/2.5/",
-};
+import openWeatherAPI from "../../Api/openWeatherAPI";
 
 const SearchBox = ({ queryCity, setQueryCity, setWeather }) => {
   const searchOnChangeHandler = (event) => {

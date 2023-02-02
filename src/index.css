@@ -8,7 +8,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.app {
+.app.warm {
   background-image: url("./Assets/HotWeather.jpg");
   background-position: bottom;
   background-size: cover;
@@ -17,6 +17,9 @@ body {
 
 .app.cold {
   background-image: url("./Assets/ColdWeather.jpg");
+  background-position: bottom;
+  background-size: cover;
+  transition: 0.4 case-out;
 }
 
 main {
